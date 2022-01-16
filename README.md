@@ -1,2 +1,1 @@
-# kubernetes-projects
-kubernetes projects
+# kubernetes
