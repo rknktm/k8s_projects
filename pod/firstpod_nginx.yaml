@@ -1,0 +1,12 @@
+apiVersion: v1 
+kind: Pod 
+metadata: 
+  name: ecom
+  labels:
+    app: front-end 
+spec:
+  containers:
+    - name: nginxim
+      image: nginx:latest
+      ports:
+        - containerPort: 80
