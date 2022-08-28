@@ -12,7 +12,7 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxUnavailable: 3
+      maxUnavailable: 1
       maxSurge: 2
   template:
     metadata:
@@ -20,7 +20,7 @@ spec:
         app: rolling
     spec:
       containers:
-      - name: nginx
+      - name: rkncon
         image: nginx
         ports:
         - containerPort: 80

@@ -1,12 +1,12 @@
 apiVersion: v1 
 kind: Pod 
 metadata: 
-  name: ecom
+  name: rkn
   labels:
     app: front-end 
 spec:
   containers:
-    - name: nginxim
+    - name: my-nginx
       image: nginx:latest
       ports:
         - containerPort: 80
