@@ -1,6 +1,6 @@
 FROM nginx:latest
-ENV user="*****"
-ENV pass="*****"
+ENV USERNAME="*****"
+ENV PASSWORD="*****"
 WORKDIR /usr/share/nginx/html
 EXPOSE 80
-CMD echo -n "User=$user Password=$pass" > index.html;nginx -g 'daemon off;'
+CMD echo -n "User=$USERNAME Password=$PASSWORD" > index.html;nginx -g 'daemon off;'
